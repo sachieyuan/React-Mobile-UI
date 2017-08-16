@@ -1,2 +1,2 @@
-# React-Mobile-UI-
+# React-Mobile-UI
 React Components for Mobile 
