@@ -1,0 +1,21 @@
+
+
+//清除浮动
+.clearfix:before, .clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+  overflow:hidden;
+}
+.clearfix{
+  *zoom:1;
+}
+//溢出隐藏
+.overflowHide{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
