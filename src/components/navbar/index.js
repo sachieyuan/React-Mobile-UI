@@ -1,11 +1,13 @@
 /*
 * @Author: yzqing
 * @Date:   2017-08-15 15:54:58
-* @Last Modified by:   yzqing
-* @Last Modified time: 2017-08-15 19:00:36
+* @Last Modified by:   yuanziqing
+* @Last Modified time: 2017-08-16 18:31:05
 */
 import React, { propTypes } from 'react';
-import NavBar from './Navbar';
+import NavBar from './NavBar';
+import ToolBar from './ToolBar';
+import ToolBarItem from './ToolBarItem';
 
 module.exports = class extends React.Component {
   handleExample(){
@@ -18,27 +20,37 @@ module.exports = class extends React.Component {
 	};
     return (
     	<section className="">
+        NavBar<br/><br/>
     	  <NavBar
     	  	left={navbar1.left}
     	  	title= "NavBar"
     	  	right={navbar1.right}
     	  />
 
-          <br/>
-          <br/>
+          <br/><br/>
 
           <NavBar
             title= "NavBar"
             right={[{iconName:'ellipsis-h',onClick: this.handleExample}]}
           />
 
-          <br/>
-          <br/>
+          <br/><br/>
 
           <NavBar
             title= "NavBar"
             left={[{iconName:'user-o',onClick: this.handleExample}]}
           />
+
+          <br/><br/>
+          ToolBar<br/><br/>
+
+          <ToolBar>
+            <ToolBarItem align="left">
+              <span>Left</span>
+            </ToolBarItem>
+          </ToolBar>
+
+
     	</section>
     )
   }

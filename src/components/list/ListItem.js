@@ -1,12 +1,12 @@
 /*
 * @Author: yzqing
 * @Date:   2017-08-06 21:37:33
-* @Last Modified by:   yzqing
-* @Last Modified time: 2017-08-07 14:36:30
+* @Last Modified by:   yuanziqing
+* @Last Modified time: 2017-08-17 16:19:54
 */
 
 import React, { Component, PropTypes } from 'react'
-// import Icon from '../Icon/Icon'
+import Icon from '../button/Icon'
 
 export default class ListItem extends Component {
 
@@ -36,7 +36,7 @@ export default class ListItem extends Component {
     }
     if (iconName) {
       return (
-        <div className='item-media'>{/*<Icon name={iconName}/>*/}</div>
+        <div className='item-media'><Icon name={iconName}/></div>
       )
     }
     if (icon) {
