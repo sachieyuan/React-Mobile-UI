@@ -24,6 +24,11 @@ module.exports = class extends React.Component {
         />
         <List>
           <ListItem
+            iconName="bus"
+            title= "Grid"
+            href="/grid"
+          />
+          <ListItem
             iconName="hand-pointer-o"
             title= "Button&Icon&Image"
             href="/button"
@@ -34,19 +39,14 @@ module.exports = class extends React.Component {
             href="/list"
           />
           <ListItem
-            iconName="bus"
-            title= "Grid"
-            href="/grid"
-          />
-          <ListItem
             iconName="subway"
             title= "Navbar"
             href="/navbar"
           />
         </List> 
+        <Button onClick={this.handleClickLink.bind(null, '/grid')}>Grid</Button>
         <Button onClick={this.handleClickLink.bind(null, '/button')}>Button&Icon&Image</Button>
         <Button onClick={this.handleClickLink.bind(null, '/list')}>List</Button>
-        <Button onClick={this.handleClickLink.bind(null, '/grid')}>Grid</Button>
         <Button onClick={this.handleClickLink.bind(null, '/navbar')}>Navbar</Button>
       </div>
     )
