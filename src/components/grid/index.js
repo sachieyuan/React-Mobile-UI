@@ -1,14 +1,14 @@
 /*
 * @Author: yzqing
 * @Date:   2017-08-12 13:25:08
-* @Last Modified by:   yzqing
-* @Last Modified time: 2017-08-15 15:37:04
+* @Last Modified by:   yuanziqing
+* @Last Modified time: 2017-08-18 22:50:40
 */
 
 import React, { propTypes } from 'react';
 import Clo from './Grid';
 import Row from './Row';
-
+import NavBarView from '../utils/NavBarView'
 module.exports = class extends React.Component {
 
   render() {
@@ -17,6 +17,10 @@ module.exports = class extends React.Component {
     };
     return (
     	<div className="row-clo">
+			<NavBarView 
+			  name="Grid"
+			/>    
+			<br/>	
     	    <Row> 布局Row Clo  gutter</Row>
 			<Row>
 			  <Clo size={50}>size50</Clo>

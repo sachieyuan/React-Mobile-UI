@@ -6,13 +6,24 @@
 @import "../component/bar";
 
 
-#app{
+#app {
   font-size: .36rem;
 }
-.row-clo{
+.row-clo {
 	.row > [class*="col-"]{
 		text-align: center;
 		background-color: #eee;
 		color: #ccc;
 	}
+}
+.nav-bar-view {
+	width: 100%;
+	height: .9rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.page-content {
+	padding-top: .9rem;
 }

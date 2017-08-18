@@ -2,12 +2,17 @@ import React, { propTypes } from 'react';
 import Button from './Button';
 import Icon from './Icon';
 import Badge from './Badge';
+import NavBarView from '../utils/NavBarView';
 
 module.exports = class extends React.Component {
 
   render() {
     return (
     	<section className="">
+          <NavBarView
+            name="Button&Icon"
+            />
+            
             Button
     		<Button>default 按钮</Button>
     		<Button active>active 按钮</Button>

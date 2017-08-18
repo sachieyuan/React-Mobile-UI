@@ -18,7 +18,10 @@ module.exports = class extends React.Component {
 
     return (
       <div>
-        <NavBar title= "Components List"/>
+        <NavBar
+          style={{'width':'100%','height':'.9rem','position':'fixed','left':'0','zIndex':99}}
+          title= "Components List"
+        />
         <List>
           <ListItem
             iconName="hand-pointer-o"

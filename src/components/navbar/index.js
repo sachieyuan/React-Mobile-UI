@@ -2,13 +2,13 @@
 * @Author: yzqing
 * @Date:   2017-08-15 15:54:58
 * @Last Modified by:   yuanziqing
-* @Last Modified time: 2017-08-16 18:31:05
+* @Last Modified time: 2017-08-18 22:54:06
 */
 import React, { propTypes } from 'react';
 import NavBar from './NavBar';
 import ToolBar from './ToolBar';
 import ToolBarItem from './ToolBarItem';
-
+import NavBarView from '../utils/NavBarView'
 module.exports = class extends React.Component {
   handleExample(){
     alert('handleEvent');
@@ -20,6 +20,9 @@ module.exports = class extends React.Component {
 	};
     return (
     	<section className="">
+        <NavBarView
+          name="NavBar"
+        />
         NavBar<br/><br/>
     	  <NavBar
     	  	left={navbar1.left}

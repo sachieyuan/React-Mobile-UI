@@ -2,7 +2,7 @@
 * @Author: yzqing
 * @Date:   2017-08-06 21:36:00
 * @Last Modified by:   yuanziqing
-* @Last Modified time: 2017-08-17 18:48:52
+* @Last Modified time: 2017-08-18 22:50:54
 */
 
 import React, { PropTypes } from 'react'
@@ -11,16 +11,15 @@ import Badge from '../button/Badge'
 import List from './List'
 import ListItem from './ListItem'
 import ListDivider from './ListDivider'
+import NavBarView from '../utils/NavBarView'
 module.exports = class extends React.Component {
-  static propTypes = {
-    onClick: PropTypes.func,
-  };
-  handleAlert() {
-  	alert('sdfa')
-  }
+
   render() {
     return (
     	<section className="page-content">
+    	  <NavBarView 
+    	    name="List"
+    	  />
     	  <div className="content-block-title">普通列表</div>
 		  <List>
 		  	<ListItem
@@ -39,7 +38,7 @@ module.exports = class extends React.Component {
 		  	  iconName="hand-pointer-o"
 		  	  title= "按钮"
 		  	  after= "文件"
-		  	  onClick={()=>{alert('sdfa')}}
+		  	  onClick={() => {}}
 		  	/>
 		  	<ListItem
               iconName="bullhorn"

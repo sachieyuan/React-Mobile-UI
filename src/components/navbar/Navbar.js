@@ -1,8 +1,8 @@
 /*
 * @Author: yzqing
 * @Date:   2017-08-15 15:56:15
-* @Last Modified by:   yzqing
-* @Last Modified time: 2017-08-15 19:12:22
+* @Last Modified by:   yuanziqing
+* @Last Modified time: 2017-08-18 23:06:23
 */
 import React, { Component, PropTypes } from 'react'
 import ReactDOM from 'react-dom'
@@ -70,9 +70,9 @@ export default class Navbar extends Component {
   }
 
   render () {
-    const { title, left, right } = this.props
+    const { title, left, right, ...props } = this.props
     return (
-      <div className='navbar'>
+      <div className='navbar' {...props}>
         <div className='navbar-inner' ref='navbar'>
           <div className='left' ref='left'>
             {left && Array.isArray(left) && left.map((object, index) => this.renderLink(object, index))}
