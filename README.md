@@ -4,13 +4,13 @@
 ### 網格佈局 Clo
 - Row
 - Clo
-			`<Row>
+			```<Row>
 			  <Clo size={50}>size50</Clo>
 			  <Clo size={50}>size50</Clo>
-			</Row>`
+			</Row>```
 ### 按鈕 Button
 - Button
-			`<Button>default 按钮</Button>
+			```<Button>default 按钮</Button>
     		<Button active>active 按钮</Button>
             <Button disable>disabled 按钮</Button>
             <Button loading>loading 按钮</Button>
@@ -20,11 +20,11 @@
             <Button inline small>inline 按钮</Button>
             <Button active inline small>inline 按钮</Button>
             <Button><Icon name="address-book-o"/> 自定义icon按钮</Button>
-            <Button inline><Icon name="user-o"/> 按钮</Button>`
+            <Button inline><Icon name="user-o"/> 按钮</Button>```
 ### 圖標 & 標簽 Icon & Badge
 - Icon
 - Badge
-			`<Icon name="car"/> car
+			```<Icon name="car"/> car
             <Icon name="child"/> child
             <Icon name="close"/> close
             <Icon name="check"/> check
@@ -34,11 +34,11 @@
             <br/>
             不同颜色Badge
             <br/>
-            <Badge theme="pink">1</Badge>  <Badge theme="orange">2</Badge>  <Badge theme="lightblue">3</Badge>  <Badge theme="red">4</Badge>`
+            <Badge theme="pink">1</Badge>  <Badge theme="orange">2</Badge>  <Badge theme="lightblue">3</Badge>  <Badge theme="red">4</Badge>```
 ### 列表 List
 #### List 
 - 普通List
-			`<List>
+			```<List>
 		  	<ListItem
 		  	  iconName="user-circle-o"
 		  	/>
@@ -48,10 +48,10 @@
 		  	<ListItem
               iconName="calendar-minus-o"
 		  	/>
-		  </List>`
+		  </List>```
 
 - 帶href 和 Icon 的List
-			`<List>
+			```<List>
 		  	<ListItem
 		  	  iconName="hand-pointer-o"
 		  	  title= "按钮"
@@ -66,10 +66,10 @@
 		  	<ListItem
               iconName="subway"
 		  	/>
-		  </List>`
+		  </List>```
 
 - 多行組合
-			`<List>
+			```<List>
 		  	<ListItem
 		  	  title= "光輝歲月"
 		  	  subTitle="Beyond"
@@ -91,13 +91,12 @@
 		  	  after= "黄家驹"
 		  	  href="javascript:;"
 		  	/>
-		  </List>`
+		  </List>```
 ### 導航 NavBar
 - NavBar
-			`	  let left=[{text:<span>Back</span>,iconName: 'angle-left',onClick: this.handleExample}],
-
+			```	  let left=[{text:<span>Back</span>,iconName: 'angle-left',onClick: this.handleExample}];
 			<NavBar
     	  	left={left}
     	  	title= "NavBar"
     	  	right={[{}]}
-    	  />`
+    	  />```
