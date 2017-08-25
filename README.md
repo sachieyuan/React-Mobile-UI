@@ -69,11 +69,11 @@
 	<ListItem
 	  iconName="bullhorn"
 	  title= "消息"
-		  after= {<Badge theme="red">4</Badge>}
-		/>
-		<ListItem
-	  iconName="subway"
-		/>
+	  after= {<Badge theme="red">4</Badge>}
+	/>
+	<ListItem
+  	  iconName="subway"
+	/>
 </List>
 ```
 
@@ -89,18 +89,18 @@
 	<ListItem
 	  icon={<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1445274336,2682847003&fm=26&gp=0.jpg"/>}
 	  title= "光輝歲月"
-		  subTitle="Beyond"
-		  text="钟声响起归家的讯号在他生命里仿佛带点唏嘘黑色肌肤给他的意义是一生奉献肤色斗争中"
-		  after= {<Badge theme="orange">4</Badge>}
-		/>
+	  subTitle="Beyond"
+	  text="钟声响起归家的讯号在他生命里仿佛带点唏嘘黑色肌肤给他的意义是一生奉献肤色斗争中"
+	  after= {<Badge theme="orange">4</Badge>}
+	/>
 	<ListItem
 	  icon={<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1445274336,2682847003&fm=26&gp=0.jpg"/>}
 	  title= "光輝歲月"
-		  subTitle="Beyond"
-		  text="钟声响起归家的讯号在他生命里仿佛带点唏嘘黑色肌肤给他的意义是一生奉献肤色斗争中"
-		  after= "黄家驹"
-		  href="javascript:;"
-		/>
+	  subTitle="Beyond"
+	  text="钟声响起归家的讯号在他生命里仿佛带点唏嘘黑色肌肤给他的意义是一生奉献肤色斗争中"
+	  after= "黄家驹"
+	  href="javascript:;"
+	/>
 </List>
 ```
 ### 導航 NavBar
@@ -108,8 +108,8 @@
 ```
 let left=[{text:<span>Back</span>,iconName: 'angle-left',onClick: this.handleExample}];
 <NavBar
-	left={left}
-	title= "NavBar"
-	right={[{}]}
+  left={left}
+  title= "NavBar"
+  right={[{}]}
 />
 ```

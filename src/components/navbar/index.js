@@ -2,13 +2,15 @@
 * @Author: yzqing
 * @Date:   2017-08-15 15:54:58
 * @Last Modified by:   yuanziqing
-* @Last Modified time: 2017-08-18 22:54:06
+* @Last Modified time: 2017-08-19 13:19:51
 */
 import React, { propTypes } from 'react';
+import NavBarView from '../utils/NavBarView';
 import NavBar from './NavBar';
 import ToolBar from './ToolBar';
 import ToolBarItem from './ToolBarItem';
-import NavBarView from '../utils/NavBarView'
+// import TabBar from './TabBar';
+// import TabBarItem from './TabBarItem';
 module.exports = class extends React.Component {
   handleExample(){
     alert('handleEvent');
@@ -53,6 +55,8 @@ module.exports = class extends React.Component {
             </ToolBarItem>
           </ToolBar>
 
+          <br/><br/>
+          TabBar<br/><br/>
 
     	</section>
     )
