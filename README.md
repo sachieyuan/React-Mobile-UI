@@ -1,13 +1,13 @@
 # React-Mobile-UI
  React Components for Mobile
 
-### 網格佈局 Clo
+### 網格佈局 Col
 - Row
-- Clo
+- Col
 ```
 <Row>
-  <Clo size={50}>size50</Clo>
-  <Clo size={50}>size50</Clo>
+  <Col size={50}>size50</Col>
+  <Col size={50}>size50</Col>
 </Row>
 ```
 ### 按鈕 Button
@@ -59,7 +59,7 @@
 
 - 帶href 和 Icon 的List
 ```
-<List>
+  <List>
 	<ListItem
 	  iconName="hand-pointer-o"
 	  title= "按钮"
@@ -72,14 +72,14 @@
 	  after= {<Badge theme="red">4</Badge>}
 	/>
 	<ListItem
-  	  iconName="subway"
+		  iconName="subway"
 	/>
-</List>
+  </List>
 ```
 
 - 多行組合
 ```
-<List>
+  <List>
 	<ListItem
 	  title= "光輝歲月"
 	  subTitle="Beyond"
@@ -101,7 +101,7 @@
 	  after= "黄家驹"
 	  href="javascript:;"
 	/>
-</List>
+  </List>
 ```
 ### 導航 NavBar
 - NavBar
